@@ -18,7 +18,7 @@ class Cart
   end
 
   def self.total_cart_price
-    @@products.each do
+    @@products.each do #NEED HELP
     end
   end
 
