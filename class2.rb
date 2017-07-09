@@ -17,9 +17,11 @@ class Cart
   end
 
   def total_before_tax
+    total = 0
     @products.each do |product|
-      @total_pre_tax  += product.base_price
+      total  += product.base_price
     end
+    puts "the total before tax is #{total}."
   end
 
   def total_after_tax
@@ -29,15 +31,6 @@ class Cart
     end
     puts "The total after tax is #{total}."
   end
-
-
-
-
-
-
-
-
-
 
 
 end
@@ -50,6 +43,7 @@ my_cart.add_product("sauce", 10)
 my_cart.add_product("juice", 10)
 
 
+puts my_cart.total_before_tax
 puts my_cart.total_after_tax
 
 
